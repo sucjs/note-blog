@@ -1,0 +1,109 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Patrika — Site Configuration
+# ─────────────────────────────────────────────────────────────────────────────
+# 这个文件和文章内容一起管理，只填写需要覆盖的配置项即可。
+# 默认值定义在 src/site.config.ts 中。
+# 修改博客名称、作者、导航、页脚或社交链接时，编辑下面对应的值即可。
+# YAML 使用缩进表示层级，请保留缩进，不要使用 Tab。
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── 站点信息 ──────────────────────────────────────────────────────────────────
+- id: config
+  title: 清梁的博客
+  # 以下标题可以分别修改；不填写时默认使用上面的 title。
+  headerTitle: 清梁的博客
+  homeTitle: Qingliang
+  footerTitle: 自古南北多歧路，君向潇湘我向秦
+  browserTitle: 清梁的博客
+  seoTitle: 清梁的博客
+  rssTitle: 清梁的博客
+  ogTitle: 清梁的博客
+  description: 记录技术、生活与思考的个人博客。
+  url: https://qingliang.dpdns.org
+  locale: zh-CN
+
+  # ── 作者信息 ──────────────────────────────────────────────────────────────────
+
+  author:
+    # 这里的内容会显示在网站作者信息和 SEO 信息中。
+    name: 清梁
+    bio: 用代码记录生活，用工具提升效率。
+    # avatar: /images/avatar.jpg
+
+  # ── 资源 ──────────────────────────────────────────────────────────────────────
+  # 取消注释即可使用自定义 logo 或社交分享图，路径相对于 /public。
+
+  # logo: /images/logo.svg
+  # ogImage: /images/og-default.jpg
+
+  # ── 导航 ──────────────────────────────────────────────────────────────────────
+  # 顶部导航链接，列表顺序就是页面上的显示顺序。
+
+  navigation:
+    # 修改导航文字或地址；url 使用站内路径时以 / 开头。
+    - title: 文章
+      url: /posts
+    - title: 笔记
+      url: /notes
+    - title: 归档
+      url: /archive
+    - title: 关于
+      url: /about
+
+  # ── 页脚链接 ──────────────────────────────────────────────────────────────────
+
+  footerLinks:
+    - title: Github
+      url: https://github.com/sucjs
+    - title: 云盘
+      url: https://qingliang.cc.cd
+    - title: RSS
+      url: /rss.xml
+
+  # ── 社交链接 ──────────────────────────────────────────────────────────────────
+  # 支持的图标：github、mastodon、twitter、rss、email。
+
+  social:
+    - title: GitHub
+      url: https://github.com/sucjs
+      icon: github
+    # - title: Mastodon
+    #   url: https://mastodon.social/@username  # ← replace or remove
+    #   icon: mastodon
+    - title: RSS
+      url: /rss.xml
+      icon: rss
+
+  # ── 内容展示 ──────────────────────────────────────────────────────────────────
+
+  # 首页标题下方显示的引导文字。
+  heroText: 记录技术、生活与思考。
+
+  # 页脚显示的附加文字，可删除此行隐藏。
+  footerCredits: ""  # ← replace with your tagline, or delete this line
+
+  # 归档页每页显示的文章数量。
+  postsPerPage: 8
+
+  # 首页显示的最新文章和笔记数量。
+  # 修改这个数字可以控制首页显示多少条最新内容。
+  recentPosts: 6
+
+  # ── 开关 ──────────────────────────────────────────────────────────────────────
+
+  # 只有配置了 logo 后才需要设为 true。
+  showLogo: true
+
+  # ── 浏览索引 ──────────────────────────────────────────────────────────────────
+  # 文章或笔记 frontmatter 中的 meta 字段可按这里的声明生成浏览维度。
+  # 未声明的 meta 字段会被忽略；slug 不能使用 years，因为该路径保留给年份索引。
+
+  browse:
+    years: true
+    indexes:
+      - key: place
+        title: 地点
+        slug: places
+      - key: trip
+        title: 旅程
+        slug: trips
