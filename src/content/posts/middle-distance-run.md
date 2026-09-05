@@ -3,9 +3,9 @@ title: 关于中长跑
 published: 2025-10-13
 description: 中长跑教会我如何面对极点、重复和疼痛，也提醒我用自己的节奏走完人生。
 tags:
-	- 跑步
-	- 坚持
-	- 人生
+  - 跑步
+  - 坚持
+  - 人生
 category: 生活
 draft: false
 lang: zh-CN
