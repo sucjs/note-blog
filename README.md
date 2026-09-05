@@ -1,11 +1,3 @@
-# Patrika
-
-A notebook-inspired personal publishing theme built with Astro. Not a blog
-theme — it draws on commonplace books, field notebooks, literary journals,
-and printed magazines, favoring typography and whitespace over decoration.
-
-See [AGENTS.md](AGENTS.md) for the full design philosophy and current
-implementation reference.
 
 ## Features
 
