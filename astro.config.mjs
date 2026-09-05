@@ -10,7 +10,7 @@ import { resolveVaultImagePaths, imageAttributes, galleryGrouping } from './src/
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://your-site.example', // ← replace with your domain (also update config.yaml)
+  site: 'https://qingliang.dpdns.org', // ← replace with your domain (also update config.yaml)
   output: 'static',
 
   vite: {
