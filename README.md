@@ -1,4 +1,4 @@
-1
+# 轻量化笔记风格的博客
 ## Features
 
 - **Content collections** for essays, notes, and standalone pages, plus a
